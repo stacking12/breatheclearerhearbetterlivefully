@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ENT Doctor & Hearing Specialists | Sinus Specialist in Brooklyn, NY</title>
+<meta name="description" content="ENT Doctor & Hearing Specialists is Brooklyn's trusted Otolaryngology Clinic and Sinus Specialist practice, offering hearing loss evaluation, tonsil & adenoid care, sleep apnea therapy, and allergy treatment at 202 Quentin Rd, Suite 2B.">
+<meta name="keywords" content="Otolaryngology Clinic, Allergist, Top Otolaryngologist, Best Otolaryngologist, Ent Doctor, Ent Specialist, Ear Nose Throat Doctor, Ear Infection Therapy, Tonsil Doctor, Adenoid Doctor, Adenoid Evaluation, Tonsil Adenoid, Sinus Specialist, Hearing Doctor, Nasal Congestion, Sleep Apnea, Snoring Therapy, Speech Delay Ent Doctor, Breathing Difficulties, Hearing Loss Therapy, Hearing Loss Evaluation, Brooklyn, NY">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#123147;
+    --navy-deep:#0b1f2e;
+    --sky:#eaf5f8;
+    --sky-soft:#f5fafb;
+    --teal:#2c7c8c;
+    --teal-deep:#1f5d69;
+    --coral:#e35a3c;
+    --coral-deep:#c8482d;
+    --ink:#16232e;
+    --paper:#ffffff;
+    --line: rgba(18,49,71,0.12);
+    --shadow: 0 20px 40px -20px rgba(11,31,46,0.25);
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Work Sans', sans-serif;
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.6;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,h4{
+    font-family:'Fraunces', serif;
+    color:var(--navy);
+    font-weight:600;
+    line-height:1.15;
+    letter-spacing:-0.01em;
+  }
+  a{text-decoration:none; color:inherit;}
+  img{max-width:100%; display:block;}
+  .container{
+    max-width:1180px;
+    margin:0 auto;
+    padding:0 24px;
+  }
+  .eyebrow{
+    text-transform:uppercase;
+    letter-spacing:0.14em;
+    font-size:0.75rem;
+    font-weight:700;
+    color:var(--coral-deep);
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+  }
+  .eyebrow::before{
+    content:"";
+    width:22px;
+    height:2px;
+    background:var(--coral);
+    display:inline-block;
+  }
+  button, .btn{
+    cursor:pointer;
+    font-family:'Work Sans', sans-serif;
+    font-weight:600;
+    border:none;
+    border-radius:999px;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease;
+  }
+  .btn-primary{
+    background:var(--coral);
+    color:#fff;
+    padding:15px 30px;
+    font-size:0.98rem;
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    box-shadow:0 12px 24px -10px rgba(227,90,60,0.55);
+  }
+  .btn-primary:hover{ background:var(--coral-deep); transform:translateY(-2px); }
+  .btn-ghost{
+    background:transparent;
+    color:var(--paper);
+    border:1.5px solid rgba(255,255,255,0.55);
+    padding:14px 28px;
+    font-size:0.95rem;
+  }
+  .btn-ghost:hover{ border-color:#fff; background:rgba(255,255,255,0.08); }
+
+  /* ===== Header ===== */
+  header{
+    position:sticky; top:0; z-index:50;
+    background:rgba(255,255,255,0.92);
+    backdrop-filter:blur(10px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav-wrap{
+    display:flex; align-items:center; justify-content:space-between;
+    padding:14px 24px;
+  }
+  .brand{ display:flex; align-items:center; gap:12px; }
+  .brand img{ height:48px; width:48px; border-radius:10px; object-fit:cover; }
+  .brand-text{ display:flex; flex-direction:column; line-height:1.2; }
+  .brand-text strong{ font-family:'Fraunces', serif; font-size:1.05rem; color:var(--navy); }
+  .brand-text span{ font-size:0.72rem; letter-spacing:0.08em; text-transform:uppercase; color:var(--teal-deep); font-weight:600;}
+  nav ul{ list-style:none; display:flex; gap:32px; }
+  nav a{ font-size:0.92rem; font-weight:600; color:var(--navy); position:relative; }
+  nav a::after{
+    content:""; position:absolute; left:0; bottom:-6px; height:2px; width:0;
+    background:var(--coral); transition:width .2s ease;
+  }
+  nav a:hover::after{ width:100%; }
+  .header-actions{ display:flex; align-items:center; gap:16px; }
+  .header-phone{ font-weight:700; color:var(--navy); font-size:0.95rem; display:flex; align-items:center; gap:8px;}
+  .menu-toggle{ display:none; background:none; border:none; font-size:1.6rem; color:var(--navy);}
+
+  /* ===== Hero ===== */
+  .hero{
+    position:relative;
+    background:linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 55%, var(--teal-deep) 100%);
+    color:#fff;
+    overflow:hidden;
+  }
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1.05fr 0.95fr;
+    align-items:center;
+    gap:48px;
+    padding:88px 24px 64px;
+  }
+  .hero h1{ color:#fff; font-size:clamp(2.3rem, 4.2vw, 3.4rem); margin:18px 0 20px; }
+  .hero h1 em{ font-style:normal; color:var(--coral); }
+  .hero p.lead{ color:rgba(255,255,255,0.82); font-size:1.08rem; max-width:520px; margin-bottom:32px; }
+  .hero-cta-row{ display:flex; gap:16px; flex-wrap:wrap; }
+  .hero-stats{ display:flex; gap:36px; margin-top:44px; flex-wrap:wrap; }
+  .hero-stats div{ border-left:2px solid rgba(255,255,255,0.25); padding-left:14px; }
+  .hero-stats strong{ display:block; font-family:'Fraunces',serif; font-size:1.6rem; color:#fff; }
+  .hero-stats span{ font-size:0.78rem; color:rgba(255,255,255,0.65); text-transform:uppercase; letter-spacing:0.06em;}
+  .hero-media{ position:relative; }
+  .hero-media .frame{
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:var(--shadow);
+    border:1px solid rgba(255,255,255,0.15);
+    position:relative;
+  }
+  .hero-media img{ width:100%; height:460px; object-fit:cover; }
+  .hero-badge{
+    position:absolute; bottom:-22px; left:-22px;
+    background:#fff; color:var(--navy);
+    padding:16px 20px; border-radius:14px; box-shadow:var(--shadow);
+    display:flex; align-items:center; gap:12px; max-width:250px;
+  }
+  .hero-badge .dot{ width:38px; height:38px; border-radius:50%; background:var(--sky); display:flex; align-items:center; justify-content:center; flex-shrink:0; color:var(--teal-deep); font-weight:700;}
+  .hero-badge small{ display:block; font-size:0.72rem; color:#6b7d8a; }
+  .hero-badge strong{ font-size:0.85rem; }
+
+  /* breath wave divider - signature element */
+  .breath-wave{ display:block; width:100%; height:60px; }
+  .breath-wave path{
+    stroke:var(--coral);
+    stroke-width:2.2;
+    fill:none;
+    stroke-dasharray:6 4000;
+    stroke-dashoffset:0;
+    animation:breathe 6s ease-in-out infinite;
+  }
+  @keyframes breathe{
+    0%{ stroke-dasharray:6 4000; stroke-dashoffset:0; opacity:0.35;}
+    50%{ stroke-dasharray:4000 0; stroke-dashoffset:0; opacity:0.9;}
+    100%{ stroke-dasharray:6 4000; stroke-dashoffset:-4000; opacity:0.35;}
+  }
+  @media (prefers-reduced-motion: reduce){
+    .breath-wave path{ animation:none; opacity:0.6; }
+  }
+
+  section{ padding:88px 0; }
+  .section-head{ max-width:640px; margin-bottom:52px; }
+  .section-head h2{ font-size:clamp(1.8rem,3vw,2.5rem); margin-top:14px; }
+  .section-head p{ color:#4c5c68; margin-top:14px; font-size:1.02rem; }
+  .bg-sky{ background:var(--sky-soft); }
+
+  /* ===== Services ===== */
+  .services-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:24px;
+  }
+  .service-card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:18px;
+    padding:30px 26px;
+    transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .service-card:hover{ transform:translateY(-6px); box-shadow:var(--shadow); border-color:transparent; }
+  .service-card.featured{ background:var(--navy); color:#fff; border-color:var(--navy);}
+  .service-card.featured h3, .service-card.featured p{ color:#fff; }
+  .service-icon{
+    width:48px; height:48px; border-radius:12px;
+    background:var(--sky); color:var(--teal-deep);
+    display:flex; align-items:center; justify-content:center;
+    font-size:1.3rem; margin-bottom:18px; font-family:'Fraunces',serif; font-weight:700;
+  }
+  .service-card.featured .service-icon{ background:var(--coral); color:#fff; }
+  .service-card h3{ font-size:1.18rem; margin-bottom:10px; }
+  .service-card p{ color:#546570; font-size:0.95rem; }
+
+  /* ===== Why Choose ===== */
+  .why-wrap{
+    display:grid;
+    grid-template-columns:0.85fr 1.15fr;
+    gap:56px;
+    align-items:center;
+  }
+  .why-media{ position:relative; border-radius:20px; overflow:hidden; box-shadow:var(--shadow); }
+  .why-media img{ width:100%; height:520px; object-fit:cover; }
+  .why-list{ display:grid; gap:22px; }
+  .why-item{ display:flex; gap:18px; }
+  .why-num{
+    font-family:'Fraunces',serif; font-weight:600; font-size:1rem;
+    color:var(--coral-deep); flex-shrink:0; width:38px; height:38px;
+    border:1.5px solid var(--coral); border-radius:50%;
+    display:flex; align-items:center; justify-content:center;
+  }
+  .why-item h4{ font-size:1.08rem; margin-bottom:6px; }
+  .why-item p{ color:#546570; font-size:0.95rem; }
+
+  /* ===== FAQ ===== */
+  .faq-list{ max-width:840px; margin:0 auto; display:grid; gap:14px; }
+  .faq-item{
+    background:#fff; border:1px solid var(--line); border-radius:16px;
+    padding:22px 26px; cursor:pointer;
+  }
+  .faq-q{ display:flex; justify-content:space-between; align-items:center; gap:16px; font-weight:600; color:var(--navy); font-size:1.02rem;}
+  .faq-q .icon{ font-size:1.3rem; color:var(--coral); transition:transform .2s ease; flex-shrink:0;}
+  .faq-item.open .faq-q .icon{ transform:rotate(45deg); }
+  .faq-a{ max-height:0; overflow:hidden; transition:max-height .3s ease; }
+  .faq-item.open .faq-a{ max-height:220px; }
+  .faq-a p{ padding-top:14px; color:#546570; font-size:0.95rem; }
+
+  /* ===== Contact ===== */
+  .contact-wrap{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:stretch;
+  }
+  .contact-card{
+    background:var(--navy);
+    color:#fff;
+    border-radius:20px;
+    padding:44px;
+    display:flex; flex-direction:column; justify-content:space-between;
+  }
+  .contact-card h3{ color:#fff; font-size:1.5rem; margin-bottom:8px;}
+  .contact-card > p{ color:rgba(255,255,255,0.72); margin-bottom:30px; font-size:0.95rem;}
+  .contact-rows{ display:grid; gap:20px; margin-bottom:30px; }
+  .contact-row{ display:flex; gap:16px; align-items:flex-start; }
+  .contact-row .ic{
+    width:40px; height:40px; border-radius:10px; background:rgba(255,255,255,0.1);
+    display:flex; align-items:center; justify-content:center; flex-shrink:0; font-size:1.05rem;
+  }
+  .contact-row strong{ display:block; font-size:0.72rem; text-transform:uppercase; letter-spacing:0.08em; color:rgba(255,255,255,0.55); margin-bottom:3px;}
+  .contact-row span, .contact-row a{ font-size:0.98rem; color:#fff; font-weight:500;}
+  .map-frame{ border-radius:20px; overflow:hidden; box-shadow:var(--shadow); border:1px solid var(--line); min-height:420px; }
+  .map-frame iframe{ width:100%; height:100%; min-height:420px; border:0; }
+
+  footer{
+    background:var(--navy-deep);
+    color:rgba(255,255,255,0.7);
+    padding:48px 0 26px;
+  }
+  .footer-grid{ display:flex; justify-content:space-between; flex-wrap:wrap; gap:30px; margin-bottom:34px; }
+  .footer-brand{ display:flex; align-items:center; gap:12px; }
+  .footer-brand img{ height:42px; width:42px; border-radius:10px; }
+  .footer-brand strong{ color:#fff; font-family:'Fraunces',serif; font-size:1.1rem; }
+  .footer-links{ display:flex; gap:30px; flex-wrap:wrap; }
+  .footer-links a{ font-size:0.9rem; color:rgba(255,255,255,0.7); }
+  .footer-links a:hover{ color:#fff; }
+  .footer-bottom{ border-top:1px solid rgba(255,255,255,0.12); padding-top:22px; font-size:0.82rem; display:flex; justify-content:space-between; flex-wrap:wrap; gap:10px;}
+
+  @media (max-width:980px){
+    nav{ display:none; }
+    .menu-toggle{ display:block; }
+    .hero-grid{ grid-template-columns:1fr; padding-top:56px;}
+    .hero-media{ order:-1; }
+    .why-wrap, .contact-wrap{ grid-template-columns:1fr; }
+    .services-grid{ grid-template-columns:repeat(2,1fr); }
+  }
+  @media (max-width:640px){
+    .services-grid{ grid-template-columns:1fr; }
+    .hero-badge{ position:static; margin-top:16px; max-width:100%; }
+    .hero-media img{ height:320px; }
+    .header-phone span{ display:none; }
+    section{ padding:64px 0; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="nav-wrap container">
+    <div class="brand">
+      <img src="https://s.floomby.com/uploads/s/140826/hcvmFk3F.jpg?download=1&name=Screenshot-14-08-2026%2013:50:36.jpg" alt="ENT Doctor & Hearing Specialists logo">
+      <div class="brand-text">
+        <strong>ENT Doctor & Hearing Specialists</strong>
+        <span>Brooklyn, NY</span>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#faq">FAQs</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="header-actions">
+      <a class="header-phone" href="tel:6467778256">📞 <span>646-777-8256</span></a>
+      <a class="btn btn-primary" href="tel:6467778256" style="padding:11px 20px; font-size:0.85rem;">Book a Visit</a>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-grid container">
+    <div>
+      <span class="eyebrow">Brooklyn's Trusted Sinus Specialist</span>
+      <h1>Breathe Clearer.<br>Hear <em>Better.</em> Live Fully.</h1>
+      <p class="lead">ENT Doctor & Hearing Specialists is a full-service Otolaryngology Clinic in Brooklyn, NY, led by a top-rated Sinus Specialist and hearing care team. From chronic sinus pressure and nasal congestion to hearing loss, tonsils, and sleep apnea — we diagnose it right and treat it with care.</p>
+      <div class="hero-cta-row">
+        <a href="tel:6467778256" class="btn btn-primary">Call 646-777-8256</a>
+        <a href="#services" class="btn btn-ghost">Explore Our Services</a>
+      </div>
+      <div class="hero-stats">
+        <div><strong>Ear · Nose · Throat</strong><span>Complete ENT Care</span></div>
+        <div><strong>Sinus & Hearing</strong><span>Specialist-Led Diagnostics</span></div>
+        <div><strong>202 Quentin Rd</strong><span>Suite 2B, Brooklyn</span></div>
+      </div>
+    </div>
+    <div class="hero-media">
+      <div class="frame">
+        <img src="https://img.magnific.com/free-photo/adult-blowing-their-snot-tissue_23-2151544711.jpg?t=st=1786972756~exp=1786976356~hmac=50afdc091763b7bb78f74f0367b25df7f6d8b1318d4c2e14d5be590ede00830a&w=2000" alt="Patient experiencing nasal congestion, seeking sinus specialist care">
+      </div>
+      <div class="hero-badge">
+        <div class="dot">✓</div>
+        <div>
+          <strong>Sinus relief, evaluated right</strong>
+          <small>Personalized nasal & sinus care plans</small>
+        </div>
+      </div>
+    </div>
+  </div>
+  <svg class="breath-wave" viewBox="0 0 1200 60" preserveAspectRatio="none">
+    <path d="M0,30 C100,5 200,55 300,30 C400,5 500,55 600,30 C700,5 800,55 900,30 C1000,5 1100,55 1200,30" />
+  </svg>
+</section>
+
+<section id="services">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Our Services</span>
+      <h2>Complete ear, nose & throat care under one roof</h2>
+      <p>As a dedicated Otolaryngology Clinic, we treat the full range of ENT and hearing conditions — with particular depth in sinus and nasal disorders, where our team is recognized as a leading Sinus Specialist practice in Brooklyn.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card featured">
+        <div class="service-icon">01</div>
+        <h3>Sinus & Nasal Care</h3>
+        <p>Comprehensive evaluation and treatment for chronic sinusitis, nasal congestion, and breathing difficulties from your dedicated Sinus Specialist team.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">02</div>
+        <h3>Hearing Health</h3>
+        <p>Thorough hearing loss evaluation and hearing loss therapy from an experienced hearing doctor, using precise diagnostic testing.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">03</div>
+        <h3>Tonsil & Adenoid Care</h3>
+        <p>Expert adenoid evaluation and tonsil adenoid treatment for children and adults, including guidance for speech delay related to ENT issues.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">04</div>
+        <h3>Sleep Apnea & Snoring</h3>
+        <p>Targeted sleep apnea and snoring therapy to identify airway causes and restore restful, uninterrupted sleep.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">05</div>
+        <h3>Ear Infection Therapy</h3>
+        <p>Prompt diagnosis and ear infection therapy for children and adults, helping relieve pain and prevent recurrence.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">06</div>
+        <h3>Allergy & General ENT</h3>
+        <p>Allergist-led testing and treatment alongside general otolaryngology care for the full spectrum of ear, nose, and throat concerns.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="why" class="bg-sky">
+  <div class="container">
+    <div class="why-wrap">
+      <div class="why-media">
+        <img src="https://img.magnific.com/free-photo/adult-blowing-their-snot-tissue_23-2151544679.jpg?t=st=1787024197~exp=1787027797~hmac=3b0d1d33ee5ccd757de9160049ac71674e8f46b44fabfa06eb02c15a74600328&w=2000" alt="ENT patient receiving sinus and nasal congestion care in Brooklyn">
+      </div>
+      <div>
+        <span class="eyebrow">Why Choose Us</span>
+        <h2 style="margin:14px 0 30px;">Why choose ENT Doctor & Hearing Specialists?</h2>
+        <div class="why-list">
+          <div class="why-item">
+            <div class="why-num">1</div>
+            <div>
+              <h4>Sinus specialist expertise</h4>
+              <p>Our physicians focus deeply on sinus and nasal disorders, so chronic congestion and pressure get an accurate diagnosis — not just a temporary fix.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">2</div>
+            <div>
+              <h4>Board-recognized otolaryngology care</h4>
+              <p>Rated among the top and best otolaryngologists serving Brooklyn, with training across every area of ear, nose, and throat medicine.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">3</div>
+            <div>
+              <h4>Care for the whole family</h4>
+              <p>From tonsil and adenoid evaluations in children to hearing loss therapy for adults, we treat patients of every age.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">4</div>
+            <div>
+              <h4>Modern hearing diagnostics</h4>
+              <p>Precise hearing loss evaluation technology means treatment plans are built around your actual results, not guesswork.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-num">5</div>
+            <div>
+              <h4>Conveniently located in Brooklyn</h4>
+              <p>Our office at 202 Quentin Rd, Suite 2B is easy to reach, with a team that keeps visits efficient and unhurried.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="container">
+    <div class="section-head" style="margin-left:auto; margin-right:auto; text-align:center;">
+      <span class="eyebrow">FAQs</span>
+      <h2>Common questions we hear</h2>
+      <p>Answers to what patients most often ask before their first visit to our ENT doctor and sinus specialist team.</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q"><span>What does a sinus specialist actually treat?</span><span class="icon">+</span></div>
+        <div class="faq-a"><p>A sinus specialist diagnoses and treats chronic sinusitis, nasal congestion, sinus pressure, and structural issues like a deviated septum — going beyond what general allergy medication can resolve.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>When should I see a doctor about hearing loss?</span><span class="icon">+</span></div>
+        <div class="faq-a"><p>If you're asking people to repeat themselves, raising the TV volume, or struggling in noisy rooms, it's time for a hearing loss evaluation so we can identify the cause and the right therapy.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Do you evaluate tonsils and adenoids in children?</span><span class="icon">+</span></div>
+        <div class="faq-a"><p>Yes. We perform adenoid evaluation and tonsil adenoid assessments for children, including cases linked to breathing difficulties, snoring, or speech delay.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>Can snoring be a sign of sleep apnea?</span><span class="icon">+</span></div>
+        <div class="faq-a"><p>Often, yes. Persistent snoring can point to sleep apnea. Our snoring therapy evaluation looks at your airway to determine the cause and the most effective treatment.</p></div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q"><span>How do I schedule an appointment?</span><span class="icon">+</span></div>
+        <div class="faq-a"><p>Simply call us at 646-777-8256. Our Brooklyn office at 202 Quentin Rd, Suite 2B is ready to schedule your ENT, sinus, or hearing consultation.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="bg-sky">
+  <div class="container">
+    <div class="section-head">
+      <span class="eyebrow">Contact Information</span>
+      <h2>Visit or call our Brooklyn office</h2>
+      <p>Reach the region's trusted Sinus Specialist and ENT team — we're here to help with sinus, hearing, and every ear, nose & throat concern.</p>
+    </div>
+    <div class="contact-wrap">
+      <div class="contact-card">
+        <div>
+          <h3>ENT Doctor & Hearing Specialists</h3>
+          <p>Otolaryngology Clinic · Sinus Specialist · Hearing Doctor — serving Brooklyn, NY</p>
+          <div class="contact-rows">
+            <div class="contact-row">
+              <div class="ic">📍</div>
+              <div><strong>Address</strong><span>202 Quentin Rd, Suite 2B, Brooklyn, NY 11223</span></div>
+            </div>
+            <div class="contact-row">
+              <div class="ic">📞</div>
+              <div><strong>Phone</strong><a href="tel:6467778256">646-777-8256</a></div>
+            </div>
+            <div class="contact-row">
+              <div class="ic">🌐</div>
+              <div><strong>Website</strong><a href="https://www.newyorkentinstitute.com/" target="_blank" rel="noopener">newyorkentinstitute.com</a></div>
+            </div>
+            <div class="contact-row">
+              <div class="ic">🗺️</div>
+              <div><strong>Directions</strong><a href="https://www.google.com/maps?cid=13402117629624854725" target="_blank" rel="noopener">View on Google Maps</a></div>
+            </div>
+          </div>
+        </div>
+        <a href="tel:6467778256" class="btn btn-primary" style="justify-content:center;">Call to Book an Appointment</a>
+      </div>
+      <div class="map-frame">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3029.0937214371725!2d-73.97873299999999!3d40.6057558!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2453f135c01d9%3A0xb9fde2fa07ca28c5!2sENT%20Doctor%20%26%20Hearing%20Specialists!5e0!3m2!1sen!2s!4v1787024465854!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="https://s.floomby.com/uploads/s/140826/hcvmFk3F.jpg?download=1&name=Screenshot-14-08-2026%2013:50:36.jpg" alt="ENT Doctor & Hearing Specialists logo">
+        <strong>ENT Doctor & Hearing Specialists</strong>
+      </div>
+      <div class="footer-links">
+        <a href="#services">Services</a>
+        <a href="#why">Why Us</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ENT Doctor & Hearing Specialists · 202 Quentin Rd, Suite 2B, Brooklyn, NY 11223</span>
+      <span>646-777-8256 · <a href="https://www.newyorkentinstitute.com/" style="color:rgba(255,255,255,0.7);">newyorkentinstitute.com</a></span>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.querySelectorAll('.faq-item').forEach(item=>{
+    item.addEventListener('click', ()=>{
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i=>i.classList.remove('open'));
+      if(!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>
